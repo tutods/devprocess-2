@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marvel's Spider-Man 2</title>
 
+    <!-- Favicon -->
     <link rel="shortcut icon" href="assets/media/favicon.png" type="image/png" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/packages/swiper/swiper.min.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
@@ -101,20 +105,69 @@
       <div class="container">
         <section>
           <h2>Últimos vídeos</h2>
+
+          <div class="swiper-pagination"></div>
         </section>
 
-        <a class="card" href="#">
-          <div class="thumbnail">
-            <img src="assets/media/thumb-01.jpg" alt="Thumb 01" />
+        <section class="slider">
+          <div class="swiper-wrapper">
+            <a class="card swiper-slide" href="#">
+              <div class="thumbnail">
+                <img src="assets/media/thumb-01.jpg" alt="Thumb 01" />
 
-            <svg width="44" height="45">
-              <use href="assets/media/sprite.svg#play" />
-            </svg>
+                <svg width="44" height="45">
+                  <use href="assets/media/sprite.svg#play" />
+                </svg>
+              </div>
+              <h3>Gameplay Reveal</h3>
+            </a>
+
+            <a class="card swiper-slide" href="#">
+              <div class="thumbnail">
+                <img src="assets/media/thumb-02.jpg" alt="Thumb 02" />
+
+                <svg width="44" height="45">
+                  <use href="assets/media/sprite.svg#play" />
+                </svg>
+              </div>
+              <h3>Story Trailer</h3>
+            </a>
+
+            <a class="card swiper-slide" href="#">
+              <div class="thumbnail">
+                <img src="assets/media/thumb-03.jpg" alt="Thumb 03" />
+
+                <svg width="44" height="45">
+                  <use href="assets/media/sprite.svg#play" />
+                </svg>
+              </div>
+              <h3>Introduction Kraven</h3>
+            </a>
+
+            <a class="card swiper-slide" href="#">
+              <div class="thumbnail">
+                <img src="assets/media/thumb-04.jpg" alt="Thumb 04" />
+
+                <svg width="44" height="45">
+                  <use href="assets/media/sprite.svg#play" />
+                </svg>
+              </div>
+              <h3>Reveal Trailer</h3>
+            </a>
           </div>
-          <h3>
-            Gameplay Reveal
-          </h3>
-        </a>
+        </section>
+
+        <button class="btn btn-prev">
+          <svg>
+            <use href="assets/media/sprite.svg#chevron" />
+          </svg>
+        </button>
+
+        <button class="btn btn-next">
+          <svg>
+            <use href="assets/media/sprite.svg#chevron" />
+          </svg>
+        </button>
       </div>
     </section>
 
@@ -135,5 +188,9 @@
         </section>
       </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="assets/packages/swiper/swiper.min.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

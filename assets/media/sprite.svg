@@ -41,7 +41,7 @@
       stroke-linejoin="round" />
   </symbol>
 
-  <symbol id="slide-arrow" width="40" height="40" viewBox="0 0 40 40" fill="none"
+  <symbol id="slide-arrow" viewBox="0 0 40 40" fill="none"
     xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd"
       d="M40 20C40 31.0467 31.0467 40 20 40C8.95333 40 0 31.0467 0 20C0 8.95333 8.95333 0 20 0C31.0467 0 40 8.95333 40 20Z"
@@ -49,6 +49,10 @@
     <path d="M17 13L23.5 19.5L17 26" stroke="white" stroke-width="1.5" />
   </symbol>
 
+  <symbol id="chevron" viewBox="0 0 24 24" fill="none">
+    <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    
   <symbol id="play" viewBox="0 0 44 45" fill="none">
     <path fill-rule="evenodd" clip-rule="evenodd"
       d="M40.8027 22.5741C40.8027 33.0286 32.3832 41.5019 21.9951 41.5019C11.607 41.5019 3.1875 33.0286 3.1875 22.5741C3.1875 12.1197 11.607 3.64636 21.9951 3.64636C32.3832 3.64636 40.8027 12.1197 40.8027 22.5741Z"

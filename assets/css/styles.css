@@ -218,6 +218,9 @@ header button {
   text-align: center;
   background-color: #f55827;
 }
+.hero .price > section button:nth-of-type(1):hover {
+  opacity: 0.8;
+}
 .hero .price > section button:nth-of-type(2) {
   width: 5.6rem;
   height: 5.6rem;
@@ -227,11 +230,18 @@ header button {
   padding: 1.6rem;
   border: 2px solid #2f2f3b;
   border-radius: 50%;
+  transition: all 0.3s ease;
 }
 .hero .price > section button:nth-of-type(2) svg {
   width: 1.8rem;
   height: 1.6rem;
   color: #c0c0cc;
+}
+.hero .price > section button:nth-of-type(2):hover {
+  border-color: #f55827;
+}
+.hero .price > section button:nth-of-type(2):hover svg {
+  color: #f55827;
 }
 .hero .features {
   display: flex;
@@ -268,6 +278,10 @@ header button {
 .videos {
   padding-top: 8rem;
   padding-bottom: 6.4rem;
+  overflow: hidden;
+}
+.videos .container {
+  position: absolute;
 }
 .videos .container > section {
   display: flex;
@@ -284,7 +298,7 @@ header button {
 }
 .videos .card {
   width: 100%;
-  max-width: 38.4rem;
+  max-width: 38.8rem;
   display: inline-flex;
   flex-direction: column;
   gap: 2.2rem;
@@ -333,6 +347,48 @@ header button {
   font-family: "Roboto Flex", sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
+}
+.videos .swiper-pagination {
+  position: relative;
+  width: auto;
+  bottom: 0;
+}
+.videos .swiper-pagination > span {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 0;
+  background-color: #2f2f3b;
+  transition: background-color 0.3s ease;
+  opacity: 1;
+}
+.videos .swiper-pagination > span.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+.videos .swiper-pagination > span:hover {
+  background-color: #fff;
+}
+.videos .btn {
+  position: absolute;
+  top: 21.3rem;
+  width: 4rem;
+  height: 4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #2f2f3b;
+}
+.videos .btn svg {
+  color: #fff;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.videos .btn-prev {
+  left: 0;
+  rotate: 180deg;
+}
+.videos .btn-next {
+  right: 0;
 }
 
 footer {
