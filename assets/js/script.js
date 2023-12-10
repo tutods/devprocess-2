@@ -5,5 +5,9 @@ const slider = new Swiper('.videos .slider', {
   pagination: {
     el: '.videos .swiper-pagination',
     clickable: true
+  },
+  navigation: {
+    nextEl: '.videos .btn-next',
+    prevEl: '.videos .btn-prev'
   }
 });

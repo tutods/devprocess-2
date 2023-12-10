@@ -1,6 +1,8 @@
 @use '../colors';
 
 .hero {
+  position: relative;
+
   width: 100%;
   height: 80rem;
 
@@ -9,8 +11,25 @@
 
   background-image: url('../media/bg-hero.jpg');
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 20.6rem;
+
+    background: linear-gradient(180deg, #060608 0%, rgba(0, 4, 7, 0) 100%);
+    transform: rotate(180deg);
+
+    z-index: 2;
+  }
 
   .container {
     display: flex;
@@ -25,6 +44,8 @@
       &:nth-of-type(1) {
         width: 100%;
         max-width: 62.2rem;
+
+        animation: fadeLeft 1s forwards;
 
         .platform {
           height: 3rem;
@@ -91,6 +112,7 @@
         gap: 1.6rem;
 
         text-align: right;
+        animation: fadeRight 1s forwards;
 
         strong {
           width: 3.2rem;
@@ -152,10 +174,13 @@
           font-size: 1.6rem;
           font-weight: 500;
           text-align: center;
+
           background-color: colors.$orange03;
+          transition: all 0.3s ease;
 
           &:hover {
-            opacity: 0.8;
+            background-color: colors.$orange01;
+            box-shadow: 0px 0px 0px 3px rgba(245, 88, 39, 0.30);
           }
         }
 
@@ -171,6 +196,7 @@
           border: 2px solid colors.$greyDark05;
           border-radius: 50%;
 
+          background-color: transparent;
           transition: all 0.3s ease;
 
           svg {
@@ -180,10 +206,11 @@
           }
 
           &:hover {
-            border-color: colors.$orange03;
+            box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.30);
+            background-color: colors.$white;
 
             svg {
-              color: colors.$orange03;
+              color: colors.$greyDark01;
             }
           }
         }
@@ -238,5 +265,32 @@
         gap: 1.6rem;
       }
     }
+  }
+}
+
+/**
+ * Animations
+ */
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
