@@ -1,0 +1,21 @@
+{
+  "name": "devprocess-2",
+  "version": "1.0.0",
+  "description": "Project of DevProcess 2 from CodeBoost",
+  "main": "index.html",
+  "author": "Daniel Sousa",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "sass --watch assets/sass:assets/css",
+    "prebuild": "rimraf ./assets/css",
+    "build": "sass assets/sass:assets/css",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@tutods/prettier-config": "^0.2.0",
+    "prettier": "^3.1.1",
+    "rimraf": "^5.0.5",
+    "sass": "^1.69.5"
+  }
+}
