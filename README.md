@@ -13,7 +13,6 @@ This repository contains all the code created following the 4 videos of **[CodeB
 
 This is the second edition, and the goal is to build a landing page using only the skills listed above.
 
-
 [![Figma][figma]](https://www.figma.com/file/bqtekTBYC8nxKNQKgh82eF/LP-Spider-Man---Simplificada?type=design&node-id=2:68&mode=design&t=2LDmX9hZdoEBDAXB-1)
 
 ### How to execute
@@ -21,15 +20,18 @@ This is the second edition, and the goal is to build a landing page using only t
 You can open the project on your browser using the `index.html` file, but if you want to make changes on the `.scss` files it's necessary compile it again to `.css` files.
 
 For that, the steps are:
+
 1. Run `npm i` or `yarn` or `pnpm i`;
 2. Excute `yarn build`;
 
 ### Additional Points
 
--   [x] Use **Sass** (`.scss`) for styling;
-    -   Added **NPM** script to build all `scss` files to `css` files.
--   [x] Add **Prettier** configuration;
-    -   Using my own [configuration](https://github.com/tutods/lib)
+- [x] Use **SVG** sprites for icons;
+- [x] Change some styles and **HTML** structure;
+- [x] Use **Sass** (`.scss`) for styling;
+  - Added **NPM** script to build all `scss` files to `css` files.
+- [x] Add **Prettier** configuration;
+  - Using my own [configuration](https://github.com/tutods/lib)
 
 ## 🌐 Live Version
 
