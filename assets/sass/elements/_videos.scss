@@ -103,6 +103,12 @@
           opacity: 100%;
         }
       }
+
+      @media screen and (max-width: 991px) {
+        &::before {
+          display: none;
+        }
+      }
     }
 
     h3 {
